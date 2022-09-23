@@ -1,0 +1,10 @@
+jobs.notifications_collector_job:
+  trigger: interval
+  every: 1
+  unit: seconds
+jobs.notifications_filter_job:
+  trigger: interval
+  every: 1
+  unit: minutes
+
+  

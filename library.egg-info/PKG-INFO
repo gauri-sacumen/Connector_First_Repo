@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: library
+Version: 1.0.0
+Summary: Library to pull notifications from iron api, filter, convert to ArchSight CEF, send to syslog and generate metrics for reporting purpose.
+Home-page: https://github.com/nitesh-sacumen/IronNet.git
+Author: Sacumen
+Author-email: deepak.baraik@sacumen.com
+License: Private
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# connector_demo
+

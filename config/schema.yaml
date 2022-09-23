@@ -1,0 +1,127 @@
+iron_api:
+  protocol:
+    dtype: string
+    required: yes
+    default: http
+  host:
+    dtype: string
+    required: yes
+    default:
+  port:
+    dtype: int
+    required: no
+    default: 80
+  username:
+    dtype: string
+    required: yes
+    default:
+  password:
+    dtype: string
+    required: yes
+    default:
+  verify_ssl:
+    dtype: bool
+    required: yes
+    default: True
+  limit:
+    dtype: int
+    required: no
+    default: 10
+  filtered_out_notifications:
+    dtype: bool
+    required: no
+    default: False
+  event_endpoint:
+    dtype: string
+    required: yes
+    default:
+  alert_endpoint:
+    dtype: string
+    required: yes
+    default:
+  dome_endpoint:
+    dtype: string
+    required: yes
+    default:
+
+event_notifications:
+  category:
+    dtype: string
+    required: no
+    default: null
+  sub_category:
+    dtype: string
+    required: no
+    default: null
+  action:
+    dtype: string
+    required: no
+    default: null
+  severity:
+    dtype: int
+    required: no
+    default: 500
+  is_whitelisted:
+    dtype: bool
+    required: yes
+    default:
+  is_blacklisted:
+    dtype: bool
+    required: yes
+    default:
+
+alert_notifications:
+  category:
+    dtype: string
+    required: no
+    default: null
+  sub_category:
+    dtype: string
+    required: no
+    default: null
+  status:
+    dtype: string
+    required: no
+    default: null
+  action:
+    dtype: string
+    required: no
+    default: null
+  severity:
+    dtype: int
+    required: no
+    default: 500
+
+dome_notifications:
+  category:
+    dtype: string
+    required: no
+    default: null
+
+
+scheduler:
+  config_dir:
+    dtype: string
+    required: yes
+    default: configurations
+  config_file:
+    dtype: string
+    required: yes
+    default: schedule.yaml
+  min_interval:
+    dtype: int
+    required: no
+    default: 1
+  max_interval:
+    dtype: int
+    required: no
+    default: 60
+  date_format:
+    dtype: string
+    required: yes
+    default: \%Y-\%m-\%d
+  time_format:
+    dtype: string
+    required: yes
+    default: \%Y-\%m-\%dT\%H:\%M:\%S
+
